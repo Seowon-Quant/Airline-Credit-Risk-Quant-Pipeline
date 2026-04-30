@@ -3,7 +3,7 @@ A foundational quantitative framework for the aviation sector, focused on establ
 
 #### Project Workflow: Building the Data Infrastructure
 
-This project represents the first major milestone in my 3month quantitative journey. I focused on building a reliable bridge between raw financial filings and structured analysis, ensuring every data point is verified at the source.
+This project represents the first major milestone in my 3month quantitative journey. This framework prioritizes methodological rigor over mechanical computation, ensuring a reliable bridge between raw financial filings and structured analysis where every data point is verified at its primary source.
 
 • Automated Financial Extraction (Python)
 
@@ -15,14 +15,14 @@ While extraction is handled in Python, the core data engine is built in R. I per
 
 •The 1-SD Volatility Hypothesis
 
-In my preliminary analysis, I defined "Dangerous" risk levels as volatility exceeding 1 Standard Deviation (Z-score > 1). In the high-leverage aviation sector, being in the top 15.9% of the volatility distribution serves as a critical leading indicator of structural stress.
+In my preliminary analysis, I defined "Dangerous" risk levels as volatility exceeding 1 Standard Deviation (Z-score > 1). In the high-leverage aviation sector, Utilizing Gaussian distribution logic, I defined 'Dangerous' risk levels as volatility exceeding +1 Standard Deviation (Z-score > 1) In the high-leverage aviation sector, identifying carriers in the right-tail (top 15.9%) of the volatility distribution serves as a critical leading indicator of structural stress and DtD (Distance-to-Default) compression.
 
 #### Current Roadmap & Academic Guidance
 
 Following feedback from Prof. Aaron Kim, the framework is evolving from a baseline data engine into a sophisticated risk assessment system.
 
 [Completed] Data Engineering Pipeline
-Successfully integrated Python/R workflows covering 49.8% of the global industry market cap. All balance sheets are structured and ready for structural modeling.
+Successfully integrated a Python/R hybrid workflow covering 49.8% ($109.6B) of the global industry market cap, ensuring the sample is a statistically significant proxy for systemic sector trends.
 
 [In Progress] Correlation & Risk Spillover
 I am currently analyzing the Correlation Matrix to identify systemic risk patterns and spillover effects within the sector.  
@@ -39,4 +39,8 @@ The final milestone involves calculating the Distance to Default (DTD) and plott
 
 • Defining the Boundary: I am spending significant time cross-verifying debt structures in airline_VOL_4.xlsx to ensure the "Default Boundary" is accurately defined before running Merton-style simulations.
 
-• Logic over Speed: I prioritize the "Why" behind the math—ensuring that my risk tiers and debt classifications are rooted in financial theory, not just mechanical code.
+• Logic over Speed 
+
+: The 'Default Boundary': Spent significant time cross-verifying debt seniority and lease structures in airline_VOL_4.xlsx to accurately define the Default Barrier before initiating Merton-style simulations.
+
+: Theory-First Approach: I prioritize the financial theory behind the math—ensuring risk tiers are rooted in structural credit fundamentals, not just algorithmic outputs.
